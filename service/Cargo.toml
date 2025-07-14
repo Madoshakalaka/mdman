@@ -1,0 +1,16 @@
+[package]
+name = "mdman-service"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+notify = "7.0"
+notify-rust = "4.11"
+dirs = "5.0"

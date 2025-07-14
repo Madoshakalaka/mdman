@@ -1,0 +1,20 @@
+[package]
+name = "mdman"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "mdman"
+path = "src/main.rs"
+
+[dependencies]
+mdman-service = { path = "../service" }
+anyhow.workspace = true
+clap = { version = "4.5", features = ["derive"] }
+dirs = "5.0"
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tracing-journald.workspace = true
